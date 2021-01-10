@@ -1,0 +1,307 @@
+{
+  "id": "7f5766a0-487c-4fef-b540-2c930785b239",
+  "version": "2.0",
+  "name": "lab9",
+  "url": "http://127.0.0.1:3000",
+  "tests": [{
+    "id": "36442f07-e152-4b7f-8a43-866654b9d0a5",
+    "name": "empty",
+    "commands": [{
+      "id": "1162e55b-df96-4c36-b2a4-c09e773f8dad",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9ffdfe26-b514-4012-8264-949f205c3444",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x692",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "72a2e799-db7e-40a7-9779-eb51c64b2e4b",
+      "comment": "",
+      "command": "click",
+      "target": "id=search_range",
+      "targets": [
+        ["id=search_range", "id"],
+        ["name=search_range", "name"],
+        ["css=#search_range", "css:finder"],
+        ["xpath=//input[@id='search_range']", "xpath:attributes"],
+        ["xpath=//form[@id='input_form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c7c81fe-3485-4c7e-a86e-fdcc70e0f68f",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//form[@id='input_form']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "efeb7d14-e258-43ae-a928-28db888a28a7",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=result",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "7f26dcf3-b920-421d-8a60-3a8ef457dba1",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=result",
+      "targets": [],
+      "value": "(myScript) Result is: no such sequences to output"
+    }]
+  }, {
+    "id": "92306efb-c718-4dce-81fe-7050a8cdc45e",
+    "name": "default",
+    "commands": [{
+      "id": "d5b6b47a-9f54-4345-9de4-dd20b4a0eac3",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fdbea1fe-9e54-4f2a-9769-b144ee5bfe26",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x692",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7b9759e1-f82e-41b4-93e4-8b5a1707aea4",
+      "comment": "",
+      "command": "click",
+      "target": "id=search_range",
+      "targets": [
+        ["id=search_range", "id"],
+        ["name=search_range", "name"],
+        ["css=#search_range", "css:finder"],
+        ["xpath=//input[@id='search_range']", "xpath:attributes"],
+        ["xpath=//form[@id='input_form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4a48906-33ac-481b-b809-66da7465f849",
+      "comment": "",
+      "command": "type",
+      "target": "id=search_range",
+      "targets": [
+        ["id=search_range", "id"],
+        ["name=search_range", "name"],
+        ["css=#search_range", "css:finder"],
+        ["xpath=//input[@id='search_range']", "xpath:attributes"],
+        ["xpath=//form[@id='input_form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "7 1 4 9 14 16"
+    }, {
+      "id": "e9325992-853d-4af5-9848-bb3a6aa75849",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//form[@id='input_form']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8f132c5-d869-49b5-a037-16f98d8a2f1d",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) > td:nth-child(1)",
+      "targets": [
+        ["css=tr:nth-child(3) > td:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='result']/table/tbody/tr[3]/td", "xpath:idRelative"],
+        ["xpath=//tr[3]/td", "xpath:position"],
+        ["xpath=//td[contains(.,'16')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c17b7667-2f28-4fe1-abbd-56557c0f040b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(2) > td:nth-child(1)",
+      "targets": [],
+      "value": "1,4,9"
+    }, {
+      "id": "10a105c2-f038-4a72-aff1-35de5e8751c7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(3) > td:nth-child(1)",
+      "targets": [],
+      "value": "16"
+    }, {
+      "id": "fff8f3c1-bd32-4998-bdff-a6c55cd33d85",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(5) > td:nth-child(1)",
+      "targets": [],
+      "value": "1,4,9"
+    }, {
+      "id": "fdee3390-841c-4ef1-9901-456db6fdcfcb",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(5) > td:nth-child(2)",
+      "targets": [],
+      "value": "3"
+    }]
+  }, {
+    "id": "c4422808-a236-4ccd-bcea-f427ebf705dd",
+    "name": "incorrect",
+    "commands": [{
+      "id": "b8a85a48-546c-4614-8eab-7db7d04a7cdc",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e368faf5-3c66-4fd5-85a8-7514382e8cf9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1048x706",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d7aa99b6-1ed3-4931-b37c-8f41c334d693",
+      "comment": "",
+      "command": "click",
+      "target": "id=search_range",
+      "targets": [
+        ["id=search_range", "id"],
+        ["name=search_range", "name"],
+        ["css=#search_range", "css:finder"],
+        ["xpath=//input[@id='search_range']", "xpath:attributes"],
+        ["xpath=//form[@id='input_form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d08aed9-394f-4801-bc07-986de6817f26",
+      "comment": "",
+      "command": "type",
+      "target": "id=search_range",
+      "targets": [
+        ["id=search_range", "id"],
+        ["name=search_range", "name"],
+        ["css=#search_range", "css:finder"],
+        ["xpath=//input[@id='search_range']", "xpath:attributes"],
+        ["xpath=//form[@id='input_form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "rehhhrhhrh"
+    }, {
+      "id": "b3931c77-c415-4416-a0b9-cc86b51e242b",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//form[@id='input_form']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9735488-48fe-4c00-b048-30d092388f5f",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=result",
+      "targets": [],
+      "value": "(myScript) Result is: incorrect input"
+    }]
+  }, {
+    "id": "6780d3ea-f08b-4ac0-b0ec-dfcea9291f31",
+    "name": "no results",
+    "commands": [{
+      "id": "04db454d-a0da-4cab-b326-c6fe70842d5f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "82406256-8a45-429b-8786-225a7702c8dc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1048x706",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c4c0ac9c-71bd-489a-9e3d-70114fa03455",
+      "comment": "",
+      "command": "click",
+      "target": "id=search_range",
+      "targets": [
+        ["id=search_range", "id"],
+        ["name=search_range", "name"],
+        ["css=#search_range", "css:finder"],
+        ["xpath=//input[@id='search_range']", "xpath:attributes"],
+        ["xpath=//form[@id='input_form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f454928e-3b39-4b8a-8ec3-78b983ddf14d",
+      "comment": "",
+      "command": "type",
+      "target": "id=search_range",
+      "targets": [
+        ["id=search_range", "id"],
+        ["name=search_range", "name"],
+        ["css=#search_range", "css:finder"],
+        ["xpath=//input[@id='search_range']", "xpath:attributes"],
+        ["xpath=//form[@id='input_form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "3 5 7 7 3"
+    }, {
+      "id": "b3003745-c937-4b58-9e98-235391339ef4",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//form[@id='input_form']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a755cedd-831f-4f3f-80cf-da738e75f55e",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=result",
+      "targets": [],
+      "value": "(myScript) Result is: no such sequences to output"
+    }]
+  }],
+  "suites": [{
+    "id": "e0ff4017-8055-42cf-8f0d-c54dd1a963b4",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["92306efb-c718-4dce-81fe-7050a8cdc45e", "36442f07-e152-4b7f-8a43-866654b9d0a5", "c4422808-a236-4ccd-bcea-f427ebf705dd", "6780d3ea-f08b-4ac0-b0ec-dfcea9291f31"]
+  }],
+  "urls": ["http://127.0.0.1:3000/"],
+  "plugins": []
+}

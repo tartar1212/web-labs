@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>ICS6 Bootstrap</title>
+    <link href="http://e-learning.bmstu.ru/moodle/pluginfile.php/7546/mod_folder/content/0/bootstrap.min.css" rel="stylesheet">
+    <style>
+        html {
+            position: relative;
+            min-height: 100%;
+        }
+
+        body {
+            margin-bottom: 40px;
+        }
+
+        main {
+            margin-top: 15px;
+        }
+
+        footer {
+            height: 40px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .my-primary {
+            background-color: #c999c9;
+            color: white;
+        }
+
+        h2 {
+            font-family: Bahnschrift;
+            color: salmon;
+        }
+
+        b {
+            color: gold;
+        }
+
+        .pink-background {
+            background-color: #c999c9;
+            color: white;
+        }
+
+        .eng {
+            font-size: larger;
+            color: firebrick;
+        }
+
+        .Ya {
+            color: deeppink;
+            font-family: Italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark my-primary">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                        Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    59
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="row">
+            <div class="col-4">
+                <img src="avatar.jpg"
+                     alt="avatar" width="150" height="150">
+            </div>
+            <div class="col-8">
+                <p>Дата: 08.12.2020</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4">
+                <form>
+                    <table>
+                        <tr>
+                            <td>Никнейм: </td>
+                            <td><input type="text" name="nick"></td>
+                        </tr>
+                        <tr>
+                            <td>Пароль</td>
+                            <td><input type="password" name="password"></td>
+                        </tr>
+                        <tr>
+                            <td>Дата рождения: </td>
+                            <td><input type="date" name="date"></td>
+                        </tr>
+                        <tr>
+                            <td>Эл. почта:</td>
+                            <td><input type="email" name="email"></td>
+                        </tr>
+                        <tr>
+                            <td>Пол:</td>
+                            <td>
+                                <input type="radio" name="sex" value="М"> М
+                                <input type="radio" name="sex" value="Ж" /> Ж
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Гендер:</td>
+                            <td>
+                                <input type="radio" name="gender" value="натурал"> Гетеросексуал<br/>
+                                <input type="radio" name="gender" value="Гей" />Гомосексуал<br />
+                                <input type="radio" name="gender" value="Би">Бисексуал
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="submit" class="btn btn-success pink-background" value="Зарегистрироваться"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="col-4">
+                <table border="8" align="center">
+                    <tr>
+                        <th class="alert alert-success pink-background" style="text-align:center" colspan=8>Расписание поездов</th>
+                    </tr>
+                    <tr>
+                        <td title="Пустое место"></td>
+                        <td>Понедельник</td>
+                        <td>Вторник</td>
+                        <td>Среда</td>
+                        <td>Четверг</td>
+                        <td>Пятница</td>
+                        <td>Суббота</td>
+                        <td>Воскресенье</td>
+                    </tr>
+                    <tr align="center">
+                        <td>Ласточка</td>
+                        <td>8:40</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>14:20</td>
+                        <td>-</td>
+                        <td>18:30</td>
+                    </tr>
+                    <tr align="center">
+                        <td>Впусан</td>
+                        <td>00:00</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>23:38</td>
+                        <td>-</td>
+                        <td>11:45</td>
+                        <td>-</td>
+                    </tr>
+                    <tr align="center">
+                        <td>Мемный</td>
+                        <td>02:28</td>
+                        <td>-</td>
+                        <td>13:37</td>
+                        <td>14:88</td>
+                        <td>-</td>
+                        <td>04:20</td>
+                        <td>-</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2> Грустная Даня </h2>
+                Этот Даня хочет моих денег<br />
+                Он любит не меня, а пару моих песен<br />
+                Чем я заслужил внимание этих <b class="eng">slaves</b>?<br />
+                Им известно, мой карман имеет очень крупный нал<br />
+                Даня, я вижу тебя насквозь<br />
+                Я знаю, что для тебя я не больше, чем новый гость, е-е (у-у)<br />
+                Будто <em>собака</em>, ты просишь кость<br />
+                Ты отравляешь мой мозг и все это не всерьез, е-е (у-у)<br />
+                <em class="Ya">Данька</em>, это все не в счет, <b class="Ya">детка</b>, выпей за мой счет<br />
+                <em class="Ya">Данька</em>, ты здесь не при чем, е-е<br />
+                Просто схожи картинки (е-е)<br />
+                <b>Мальчики</b>-невидимки<br />
+            </div>
+        </div>
+    </main>
+    <footer class="my-primary">
+        <div class="container">
+            <p class="footer-text">Footer</p>
+        </div>
+    </footer>
+</body>
+</html>

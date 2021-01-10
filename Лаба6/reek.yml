@@ -1,0 +1,12 @@
+detectors:
+  FeatureEnvy:
+    enabled: false
+
+  TooManyStatements:
+    enabled: false
+
+  DuplicateMethodCall:
+    enabled: false
+
+  UncommunicativeVariableName:
+    enabled: false

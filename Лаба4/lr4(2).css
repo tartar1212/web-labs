@@ -1,0 +1,39 @@
+.name {
+    color: white;
+    font-family: fantasy;
+    font-size: xx-large;
+    text-align: center;
+}
+table {
+    color: white;
+    margin-top: 100px;
+    margin-left: 350px;
+    margin-right: 400px;
+    width: 550px;
+    border-collapse: collapse;
+}
+.table_name {
+    font-size: x-large;
+    font-family: monospace;
+    font-weight: bold;
+}
+tr,th {
+    text-align: center;
+    border: solid 2px white;
+}
+td {
+    text-align: center;
+    border: solid 2px white;
+}
+.true:hover {
+    background: rgb(9, 107, 5);
+    text-align: center;
+    border: solid 2px white;
+}
+a {
+    color: white;
+    margin-top: 50px;
+    font-size: large;
+    margin-left: 480px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}

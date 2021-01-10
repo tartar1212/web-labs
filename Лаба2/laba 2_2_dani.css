@@ -1,0 +1,34 @@
+﻿.name {
+    text-align: center;
+    font-size: x-large;
+    font-family:MS Gothic;
+}
+
+.table {
+    border: solid 3px black;
+    display: table;
+    width: 40%;
+    margin: 10px auto;
+}
+
+.cell {
+    font-family: MS Gothic;
+    font-size: medium;
+    width: 50%;
+    border: solid 1px black;
+    display: table-cell;
+}
+
+.label_cell {
+    font-family: MS Gothic;
+    font-size: large;
+    width: 50%;
+    border: solid 2px black;
+    text-align: center;
+    display:table-cell;
+}
+
+.row {
+    display: table-row;
+    text-align: center;
+}

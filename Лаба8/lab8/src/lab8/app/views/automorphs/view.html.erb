@@ -1,0 +1,40 @@
+<h1>Automorphs#view</h1>
+<p>Find me in app/views/automorphs/view.html.erb</p>
+<table>
+	<p id="result">
+		<% if @result.instance_of?(String)%>
+		<%case @result.last.to_i%>
+			<%when 1%>
+				<%="nil input"%> 
+			<%when 2%>
+				<%="incorrect input"%>
+			<%when 3%>
+				<%="no such sequences to output"%>
+			<%else%>
+				<%="unkonown error"%>
+			<%end%>
+		<%else%>
+		<table>
+			<tr><td>sequence</td><td>size</td></tr>
+
+			<% @result.each do |elem| %>
+			<% unless elem.size == 0 %>
+			<tr>
+				<td><%= elem%></td>
+				<td><%= elem.size%></td>
+			</tr>
+			<% end %>
+			<% end %>
+
+			<tr>
+				<td>longest sequence:</td>
+				<td><%= @result.max{|elem, next_elem| elem.size <=> next_elem.size}%></td>
+			</tr>
+			<tr>
+				<td>Max size:</td>
+				<td><%= @result.max{|elem, next_elem| elem.size <=> next_elem.size}.size%></td>
+			</tr>
+		</table>
+		<% end %>
+	</p> 
+	<%= link_to "Search in other sequence(array)", :automorphs_input %>

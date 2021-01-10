@@ -1,0 +1,63 @@
+.name {
+    color: white;
+    font-family: fantasy;
+    font-size: xx-large;
+    text-align: center;
+}
+#input_name {
+    color: rgb(56, 54, 172);
+    height: 30px;
+    width: 300px;
+}
+#input_cost {
+    color: rgb(56, 54, 172);
+    height: 30px;
+    width: 300px;
+}
+#input_button, #sum_button {
+    height: 30px;
+    width: 310px;
+}
+form {
+    margin-top: 50px;
+    margin-left: 500px;
+}
+table {
+    color: white;
+    margin-top: 100px;
+    margin-left: 350px;
+    margin-right: 400px;
+    width: 550px;
+    border-collapse: collapse;
+}
+.table_name {
+    font-size: x-large;
+    font-family: monospace;
+    font-weight: bold;
+}
+tr,th {
+    text-align: center;
+    border: solid 2px white;
+}
+td {
+    text-align: center;
+    border: solid 2px white;
+}
+th:hover {
+    background: rgb(127, 23, 224);
+    text-align: center;
+    border: solid 2px white;
+}
+.end_sum {
+    color: white;
+    margin-top: 50px;
+    margin-left: 500px;
+}
+
+a {
+    color: white;
+    margin-top: 50px;
+    font-size: large;
+    margin-left: 570px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}

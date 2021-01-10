@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+    <html lang="ru">
+        <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="lr4(1).css">
+        <script>
+            let arr_cost = [];
+        </script>
+        <script src="lr4(1).js"></script>
+        <title>Лаб №4</title>
+        </head>
+        <body background="879142.jpg" onpageshow="get_cookie()" style="font-weight: bold">
+            
+            <div class=name>Добавление товара</div>
+            <form>
+            <p><input type="text" id="input_name" placeholder="Предмет"/></p>
+            <p><input type="text" id="input_cost" placeholder="Стоимость"/></p>
+            <button type="button" id="input_button" onclick="input()">Добавить товар</button>
+            </form>   
+            <table id="tab1"> 
+                    <tr>
+                        <td class = table_name>ПРЕДМЕТ</td>
+                        <td class = table_name>СТОИМОСТЬ</td>
+                    </tr>
+                <tbody>
+                </tbody>
+            </table>
+            <div class=end_sum>
+                <button type="button" id="sum_button" onclick="sum()">Рассчитать сумму</button>
+                <p id=sum><b>Сумма: 0</b></p>
+            </div>
+            <p><a href="lr4(2).html">Доступные товары</a></p>
+            </body>
+    </html>

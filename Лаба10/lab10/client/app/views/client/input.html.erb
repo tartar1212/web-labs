@@ -1,0 +1,40 @@
+<h1>Client#input</h1>
+<p>Find me in app/views/client/input.html.erb</p>
+<p>Search of full squares sequence(e.g. 7 1 4 9 14 16 -> [1, 4, 9], [16]), use space as separator</p>
+<%= form_tag("/client/output", :method => "get") do %>
+    <%= label_tag("Sequence to search in:") %>
+    <%= text_field_tag(:search_range) %>
+    <br/>
+    <br/>
+
+    <div>
+
+      <p>Render side</p>
+
+      <div class="form-check">
+        <label>
+          <input type="radio" name="side" value="server" id="server-side" checked>
+          Server side
+        </label>
+      </div>
+
+      <div class="form-check">
+        <label>
+          <input type="radio" name="side" value="client" id="client-xml">
+          Browser: XML only
+        </label>
+      </div>
+
+      <div class="form-check">
+        <label>
+          <input type="radio" name="side" value="client-xslt" id="client-xslt">
+          Browser: XML + XSLT
+        </label>
+      </div>
+
+    </div>
+
+    <br/>
+
+    <%= submit_tag("Output result") %>
+<% end %>

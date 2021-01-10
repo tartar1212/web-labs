@@ -1,0 +1,11 @@
+Layout/LineLength:
+  Max: 105
+
+Metrics/MethodLength:
+  Max: 100
+
+Metrics/AbcSize:
+  Max: 100
+
+Style/StringLiterals:
+  Enabled: false
