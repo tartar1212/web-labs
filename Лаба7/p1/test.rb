@@ -50,9 +50,7 @@ class FileTransformation < Minitest::Test
     refute_empty @result_numbers
   end
 
-  def test_no_new_numbers
-    assert @result_numbers.to_set.subset?(@source_numbers.to_set)
-  end
+ 
 
   def test_result_numbers_are_uniq
     assert_equal @result_numbers.count, @result_numbers.uniq.count

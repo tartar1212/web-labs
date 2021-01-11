@@ -27,6 +27,7 @@ class XmlController < ApplicationController
     end
 
     respond_to do |format|
+      format.html { render xml: result.to_xml }
       format.xml { render xml: result.to_xml }
       format.rss { render xml: result.to_xml }
     end
